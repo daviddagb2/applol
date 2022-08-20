@@ -26,7 +26,10 @@ class ListaChamp : AppCompatActivity(),SearchView.OnQueryTextListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityListaChampBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
         binding.listChamp.setOnQueryTextListener(this)
         IniReciclerView()
 
